@@ -1,3 +1,20 @@
+<?php
+
+// Cek apakakah data ada di $_GET 
+if (!isset($_GET["Merk"]) || 
+!isset($_GET["Type"]) ||
+!isset($_GET["Warna"]) ||
+!isset($_GET["Keluaran"]) ||
+!isset($_GET["RAM"]) ||
+!isset($_GET["Harga"])){
+
+    // Redirect
+    header("Location:get.php");
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +33,6 @@
         <li><?=  $_GET ["Harga"] ;?></li>
     
     </ul>
-    <h3><a href="Superglobal.php">Kembali</a></h3>
+    <h3><a href="get.php">Kembali</a></h3>
 </body>
 </html>

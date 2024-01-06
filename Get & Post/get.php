@@ -55,7 +55,7 @@ $spekhandphone = [
 <?php foreach ($spekhandphone as $shd):?>
     <ul>
         <li>
-        <a href="Profile.php?Merk=<?= $shd ["Merk"];?>&Type=<?= $shd ["Type"]?>
+        <a href="get2.php?Merk=<?= $shd ["Merk"];?>&Type=<?= $shd ["Type"]?>
         &Warna=<?= $shd ["Warna"]?>
         &Keluaran=<?= $shd ["Keluaran"]?>
         &RAM=<?= $shd ["RAM"]?>
@@ -64,7 +64,7 @@ $spekhandphone = [
         </li>
     </ul>
 
-    <!-- Belum Selesai Nonton Menit 28:21 -->
+  
 
 <?php endforeach?>
 </body>
